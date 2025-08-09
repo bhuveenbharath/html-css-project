@@ -1,0 +1,57 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(20, 156, 20);
+}
+h2{
+    text-align: center;
+    color: orange;
+}
+form{
+    padding: 10px;
+    background-color: rgb(179, 77, 36);
+    height: auto;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-top: 40px;
+    border-radius: 20px;
+
+}
+label{
+    display: block;
+    margin: 5px;
+    font-weight: 100;
+    font-style: oblique;
+}
+input[type=text],input[type=password],input[type=email],textarea{
+    padding: 5px;
+    border: 2px solid white;
+    box-sizing: content-box;
+    border-radius: 5px;
+    width: 96%;
+}
+select{
+    width: 97%;
+    padding: 8px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+input[type=submit]{
+    color: black;
+    background-color: green;
+    cursor: pointer;
+    margin-top: 15px;
+    padding:10px;
+    border-radius: 8px;
+    margin-left: 20px;
+    width: 25%;
+    text-size-adjust: 100%;
+    font-size: 18px;
+}
+input[type="submit"]:hover{
+    background-color: white;
+}
+.registration{
+    width: 590px;
+    margin-left:150px;
+}

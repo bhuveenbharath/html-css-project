@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotoQ Premium Bikes</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: 'Times New Roman', Times, serif;
+        background-color: #fff;
+        color: #333;
+    }
+    header{
+        background-color: #0f0f0f;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        max-width: 100%;
+        background-image: url(bike8.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header h1{
+        font-size: 3rem;
+        background-color: rgb(0,0,0,0.2);
+        padding: 20px;
+        border-radius: 10px;
+        }
+        nav{
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px;
+        }
+        nav a{
+            color: #fff;
+            text-decoration: double;
+            font-weight: bold;
+            transition: color 0.5s;
+        }
+        nav a:hover{
+            color: #00bfff;
+        }
+        section{
+            padding: 20px;
+        }
+        .specs{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background-color: #f4f4f4;
+        }
+        .specs-1{
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 6px 8px rgba(0,0,0,1.9);
+            margin: 10px;
+            padding: 20px;
+            width: 200px;
+            transform: scale(1.1);
+            transition: transform 0.5s;
+            
+        }
+        .gallery{
+            display: flex;
+            justify-content: center;
+            gap: 10px;;
+        }
+        .gallery img{
+            width: 200px;
+        }
+        .gallery img:hover{
+            transform: scale(1.1);
+            transition: transform 0.5s;
+        }
+        .video{
+            display: flex;
+            justify-content: center;
+        }
+        iframe{
+            width: 75%;
+            height: 300px;
+            border-radius: 10px;
+        }
+        </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#bikes">Bikes</a>
+        <a href="#specs">Specification</a>
+        <a href="#video">Video</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+    <header>
+        <h1>Welcome to MotoQ Premium Showroom</h1>
+    </header>
+    <section id="specs" class="specs">
+        <div class="specs-1">
+           <h3>MotoQ 1000R</h3>
+           <p>Engine: 1000cc</p>
+           <p>Horsepower: 150HP</p>
+           <p>Top Speed: 299 km/h</p> 
+        </div >
+        <div class="specs-1">
+            <h3>MotoQ Cruiser</h3>
+            <p>Engine: 800cc</p>
+            <p>Horsepower: 90HP</p>
+            <p>Top Speed: 200 km/h</p>
+        </div>
+        <div class="specs-1">
+            <h3>MotoQ Trall</h3>
+            <p>Engine: 650cc</p>
+            <p>Horsepower: 70HP</p>
+            <p>Top Speed: 180 km/h</p>
+        </div>
+    </section>
+    <section id="bikes" class="gallery">
+        <img src="bike1.jpg" alt="bike 1">
+        <img src="bike2.jpg" alt="bike 2">
+        <img src="bike3.jpg" alt="bike 3">
+        <img src="bike4.jpg" alt="bike 4">
+        <img src="bike5.jpg" alt="bike 5">
+    </section>
+    <section id="video" class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/6Pqvm8_6RLE?si=uF2Tvahbp50ASs78" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>    
+
+</body>
+</html>
