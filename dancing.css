@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.head,.left-eye,.right-eye,.left-arm,.mid,.right-arm,.left-leg,.right-leg{
+    background-color: #6491da;
+}
+.head{
+    width: 200px;
+    height: 150px;
+    background-color: green;
+    color: blanchedalmond;
+    border-radius: 200px 200px 0 0;
+    margin-bottom: 10px;
+    position: relative;
+    margin: 0 auto;
+}
+.eye{
+    background-size: cover;
+    background-color: black;
+    position: relative;
+    top: 100px;
+}
+.left-eye{
+    background-size: cover;
+    background-color: rgb(220, 224, 224);
+    margin-left: 30px;
+}
+.right-eye{
+    background-size: cover;
+    margin-left: 100px;
+}
+.upper-body{
+    width: 300px;
+    height: 125px;
+    margin: 0 auto;
+    display: flex;
+}
+.left-arm,.right-arm{
+    width: 40px;
+    height: 125px;
+    border-radius: 100px;
+    margin-top: 20px;
+}
+.left-arm{
+    margin-right: 10px;
+}
+.right-arm{
+    margin-left: 10px;
+}
+.mid{
+    width: 200px;
+    height: 200px;
+    border-radius: 0 0 50px 50px;
+    transition: border-radius 1s;
+}
+.lower-body{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+.left-leg,.right-leg{
+    width: 40px;
+    height: 200px;
+    border-radius: 100px 100px 100px 100px;
+    position: relative;
+    display: inline-block;
+}
+.left-leg{
+    margin-left: 45px;
+}
+.right-leg{
+    margin-left: 30px;
+}
+.robot:hover .mid{
+    border-radius: 40%;
+    animation: movemid 2s infinite;
+}
+.robot:hover .head{
+    animation: movehead 2s infinite;
+}
+.robot:hover .left-arm{
+    animation:  moveleftarm 2s infinite;
+}
+.robot:hover .right-arm{
+    animation: moverightarm 2s infinite;
+}
+.robot:hover .left-leg{
+    animation: moveleftleg 2s infinite;
+}
+.robot:hover .right-leg{
+    animation: moverightleg 2s infinite;
+}
+@keyframes movehead{
+    0%{width: 200px;}
+    25%{width: 300px;}
+    50%{width: 200px;}
+    75%{width: 300px;}
+    100%{ width: 200px;}
+}
+@keyframes moveleftarm{
+    0%{transform: rotate(0deg);
+    transform-origin: top center;
+    }
+    25%{transform: rotate(90deg);
+    transform-origin: top center;
+    }
+    50%{transform: rotate(0deg);
+    transform-origin: top center;
+    }
+    75%{transform: rotate(90deg);
+    transform-origin: top center;
+    }
+    100%{transform: rotate(0deg);
+    transform-origin: top center;
+    }
+}
+@keyframes moveleftleg{
+    0%{transform: rotate(0deg);
+    transform-origin: top center;
+    }
+    25%{transform: rotate(40deg);
+    transform-origin: top center;
+    }
+    50%{transform: rotate(0deg);
+    transform-origin: top center;
+    }
+    75%{transform: rotate(40deg);
+    transform-origin: top center;
+    }
+    100%{transform: rotate(0deg);
+    transform-origin: top center;
+    }
+}
+@keyframes moverightarm{
+    0%{transform: rotate(0deg);
+    transform-origin: top center;
+    }
+    25%{transform: rotate(-90deg);
+    transform-origin: top center;
+    }
+    50%{transform: rotate(0deg);
+    transform-origin: top center;
+    }
+    75%{transform: rotate(-90deg);
+    transform-origin: top center;
+    }
+    100%{transform: rotate(0deg);
+    transform-origin: top center;
+    }
+}
+@keyframes moverightleg{
+    0%{transform: rotate(0deg);
+    transform-origin: top center;
+    }
+    25%{transform: rotate(-40deg);
+    transform-origin: top center;
+    }
+    50%{transform: rotate(0deg);
+    transform-origin: top center;
+    }
+    75%{transform: rotate(-40deg);
+    transform-origin: top center;
+    }
+    100%{transform: rotate(0deg);
+    transform-origin: top center;
+    }
+}

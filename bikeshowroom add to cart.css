@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+nav{
+    background: #222;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+}
+nav a{
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin: 15px;
+}
+nav a:hover{
+    color: rgb(226, 143, 19);
+}
+section{
+    padding: 80px 20px;
+}
+#home{
+    background: url(b1.jpeg) no-repeat center center/cover;
+    height: 100vh; 
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#bike specs{
+    background: #f4f4f4;
+
+}
+.bike{
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    border-radius: 10px;
+    text-align: center;
+}
+#bike-img{
+    width: 100%;
+    border-radius: 10px;
+}
+#contact{
+    background-color: #eee;
+}
+form{
+    background: white;
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 10px;
+}
+input,textarea,button{
+    width: 100%;
+    margin: 5px 0;
+    padding: 20px;
+}
+button{
+    background:  orange;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    
+    
+}
+button:hover{
+    background: darkorange;
+}
+#Thankyou{
+    text-align: center;
+    display: none;
+    padding: 50px;
+}
+#available bikes{
+    padding: 40px;
+    background: #f8f9fa;
+}
+#searchbox{
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 250px;
+    border: 1px solid;
+}
+#bikelist{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.bike-card{
+    border: 1px solid #ccc;
+    height: 120px;
+    object-fit: cover;
+}
+input{
+
+}
